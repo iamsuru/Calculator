@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #191b28;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin: 0px 50px 0px 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.calci-container {
+  text-align: center;
   color: white;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.calci {
+  margin-top: 50px !important;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 1em;
+  height: 350px;
+  width: 300px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display,
+.result {
+  padding: 5px;
+  text-align: end;
+  background-color: black;
+  border: solid black 0.5px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  font-size: 40px;
+}
+
+.result{
+  font-size: 20px !important;
+}
+
+.sides {
+  background-color: #323232 !important;
+}
+
+.equal {
+  background-color: #ae6433 !important;
+}
+
+input[type="button"],
+button[type="button"] {
+  text-align: center;
+  font-size: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  border: solid black 1px;
+  border-radius: 50%;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+input:active[type="button"] {
+  color: #000000;
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+button:active[type="button"] {
+  color: #000000;
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
 }
